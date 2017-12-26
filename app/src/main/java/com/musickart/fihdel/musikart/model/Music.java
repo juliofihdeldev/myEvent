@@ -4,16 +4,23 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by julio on 12/21/17.
  */
 
-public class Music {
+public class Music  implements Serializable{
     public String id;
+    public Boolean bol;
 
     public Music() {
+    }
+
+    public Music(String s, boolean b) {
+        title = s;
+        bol = b;
     }
 
     public String getId() {
@@ -90,18 +97,26 @@ public class Music {
 
     public String ImagesMusic;
 
+    private static int lastContactId = 0;
+
+    public static ArrayList<Music> createMusicList(int numContacts) {
+        ArrayList<Music> contacts = new ArrayList<Music>();
+
+        for (int i = 1; i <= numContacts; i++) {
+            contacts.add(new Music("Musiccc " + ++lastContactId, i <= numContacts / 2));
+        }
+        return contacts;
+    }
+
 /*
     public Music (JSONObject jsonObject) throws JSONException {
         this.title = jsonObject.getString("title");
         this.lien = jsonObject.getString("lien");
         this.ImagesMusic = jsonObject.getString("images");
-
-
     }
 
     public static ArrayList<Music> fromJSONArray(JSONArray array) {
         ArrayList<Music> results = new ArrayList<>();
-
         for (int x = 0; x < array.length(); x++){
             try {
                 results.add (new Music(array.getJSONObject(x)));
@@ -110,7 +125,6 @@ public class Music {
             }
         }
         return results;
-
     }
 */
 

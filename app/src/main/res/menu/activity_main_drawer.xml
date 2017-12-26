@@ -17,7 +17,7 @@
             android:icon="@drawable/ic_action_artiste"
             android:title="Artiste/groupe" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/newAlbum"
             android:icon="@drawable/ic_action_album"
             android:title="Nouveaux albums" />
         <item
@@ -31,7 +31,7 @@
 
         <menu>
             <item
-                android:id="@+id/five"
+                android:id="@+id/compte"
                 android:icon="@drawable/ic_action_artiste"
                 android:title="Mon compte" />
             <item

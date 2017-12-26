@@ -2,6 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
     android:layout_height="wrap_content">
 
     <ImageView
@@ -23,8 +25,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="11dp"
-        android:padding="32dp"
+        android:layout_margin="32dp"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/amonik" />
 
@@ -34,9 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageMusic"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="8dp"
         android:text="Harmonik"
         android:textColor="@color/colorBlanc"
         android:textSize="30sp"

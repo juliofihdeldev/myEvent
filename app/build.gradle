@@ -28,10 +28,16 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.loopj.android:android-async-http:1.4.9'
     compile 'jp.wasabeef:glide-transformations:3.0.1'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+
+    //compile 'com.facebook.android:facebook-android-sdk:4.+'
     // If you want to use the GPU Filters
     compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
+
+
+
 

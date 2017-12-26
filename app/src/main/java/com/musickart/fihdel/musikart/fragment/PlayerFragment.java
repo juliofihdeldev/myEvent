@@ -25,17 +25,19 @@ public class PlayerFragment extends AppCompatActivity {
 
         mediaPlayer = MediaPlayer.create(PlayerFragment.this, R.raw.kalash_laisse_moi_te_sauver);
         mediaPlayer.start();
+        playBtn.setImageResource(R.drawable.ic_action_pause);
 
         playBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                if(mediaPlayer.isPlaying()){
                    mediaPlayer.pause();
-                   playBtn.setImageResource(R.drawable.ic_action_pause);
-                   Toast.makeText(getApplicationContext(),  "la position est" + mediaPlayer.getCurrentPosition()/1000, Toast.LENGTH_LONG).show();
+                   playBtn.setImageResource(R.drawable.ic_action_play);
+                   // Toast.makeText(getApplicationContext(),  "la position est" + mediaPlayer.getCurrentPosition()/1000, Toast.LENGTH_LONG).show();
                }else {
                    mediaPlayer.start();
-                   playBtn.setImageResource(R.drawable.ic_action_play);
+
+                   playBtn.setImageResource(R.drawable.ic_action_pause);
                }
 
             }

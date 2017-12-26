@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,10 +19,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.musickart.fihdel.musikart.R;
+import com.musickart.fihdel.musikart.adapter.AlbumAdapter;
 import com.musickart.fihdel.musikart.adapter.MusicAdapter;
+import com.musickart.fihdel.musikart.fragment.AlbumFragment;
+import com.musickart.fihdel.musikart.fragment.ListMysicByAlbum;
 import com.musickart.fihdel.musikart.fragment.PlayerFragment;
+import com.musickart.fihdel.musikart.model.Album;
 import com.musickart.fihdel.musikart.model.Music;
 
 import java.util.ArrayList;
@@ -28,15 +36,15 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     ArrayList<Music> musicArrayList;
-    MusicAdapter musicAdapter;
-    ListView lvItems;
+    MusicAdapter adapter;
+    RecyclerView rvItems;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        rvItems = findViewById(R.id.list_item);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,9 +65,32 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        lvItems = findViewById(R.id.list_item);
-        musicArrayList = new ArrayList<>();
-        musicAdapter = new MusicAdapter(getApplicationContext(), musicArrayList);
+
+        musicArrayList = Music.createMusicList(13);
+        adapter = new MusicAdapter(this, musicArrayList);
+        // Attach the adapter to the recyclerview to populate items
+        rvItems.setAdapter(adapter);
+        rvItems.setLayoutManager(new LinearLayoutManager(this));
+        Music m = new Music();
+
+        /*
+            StaggeredGridLayoutManager gridLayoutManager =
+                new StaggeredGridLayoutManager(2    , StaggeredGridLayoutManager.VERTICAL);
+            // Attach the layout manager to the recycler view
+            rvItems.setLayoutManager(gridLayoutManager);
+        */
+
+        adapter.setOnItemClickListener(new MusicAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Music music = musicArrayList.get(position);
+                Intent go = new Intent(getApplicationContext(), ListMysicByAlbum.class);
+                go.putExtra("album", music);
+                startActivity(go);
+                Toast.makeText(getApplicationContext(), music.getTitle() + " was clicked!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         laodMusic();
     }
 
@@ -105,15 +136,19 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
+        } else if (id == R.id.newAlbum) {
+            Intent album = new Intent(MainActivity.this, AlbumFragment.class);
+            startActivity(album);
+        } else if (id == R.id.compte) {
+           // Intent log = new Intent(MainActivity.this, LogActivity.class);
+            Intent log = new Intent(MainActivity.this, ProfilUsers.class);
+            startActivity(log);
         } else if (id == R.id.one) {
 
         } else if (id == R.id.two) {
 
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -128,35 +163,6 @@ public class MainActivity extends AppCompatActivity
 
 
     public void laodMusic(){
-        lvItems.setAdapter(musicAdapter);
-
-        Music music = new Music();
-        music.album= "Harmonic";
-        music.title= "Amour d'enfance";
-        music.ImagesMusic= "R.id.amonik";
-
-
-        Music music2 = new Music();
-        music2.album= "Djakout No !";
-        music2.title= "Amour d'enfance enfance ";
-        music2.ImagesMusic= "R.id.enfance";
-
-        musicAdapter.add(music);
-        musicAdapter.add(music2);
-
-        musicAdapter.notifyDataSetChanged();
-
-        lvItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent player = new Intent(MainActivity.this, PlayerFragment.class);
-                player.putExtra("id_music",1);
-                startActivity(player);
-
-            }
-        });
-
-
      /*
         String url = "http://ayibopost.com/wp-json/posts?filter[posts_per_page]=9";
         AsyncHttpClient client = new AsyncHttpClient();
