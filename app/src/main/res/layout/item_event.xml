@@ -100,14 +100,22 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@color/dark_blue"
             android:visibility="visible" />
+<ImageView
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="@color/colorPrimary"
+    android:layout_above="@id/relativeLayout3"/>
 
         <RelativeLayout
+
             android:id="@+id/relativeLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/backGr"
+            android:gravity="center"
             android:background="@color/colorBlanc"
             android:padding="8dp">
 
@@ -149,7 +157,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/imgSend"
+                android:layout_alignParentTop="true"
                 app:srcCompat="@drawable/ic_action_love" />
 
         </RelativeLayout>
