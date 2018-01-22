@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.musickart.fihdel.musikart">
+    package="com.musickart.fihdel.event">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -29,11 +29,22 @@
             </intent-filter>
         </activity>
         <activity android:name=".fragment.PlayerFragment" />
-        <activity android:name=".fragment.AlbumFragment" />
+        <activity android:name=".fragment.EventFragment" />
         <activity android:name=".activity.LogActivity" />
         <!-- <service android:name=".service.MediaPlayerService" /> -->
         <activity android:name=".fragment.ListMysicByAlbum" />
-        <activity android:name=".activity.ProfilUsers"></activity>
+        <activity android:name=".activity.ProfilUsers" />
+        <activity android:name=".activity.CommentActivity" />
+        <activity
+            android:name=".activity.Details"
+            android:label="@string/title_activity_details"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.PaymentTicketEvent"
+            android:label="@string/title_activity_payment_ticket_event"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.MyTicket" />
+        <activity android:name=".activity.UserValideTicket"></activity>
     </application>
 
 </manifest>

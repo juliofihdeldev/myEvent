@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="?android:attr/selectableItemBackground"
-    tools:context="com.musickart.fihdel.musikart.fragment.AlbumFragment"
+    tools:context="com.musickart.fihdel.event.fragment.EventFragment"
     android:orientation="vertical">
 
     <android.support.design.widget.AppBarLayout

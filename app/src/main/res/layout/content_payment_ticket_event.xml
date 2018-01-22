@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stripe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorPrimary"
+    android:paddingTop="60dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/relative_layout_background"
+        android:padding="8dp"
+        stripe:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.musickart.fihdel.event.activity.PaymentTicketEvent"
+        tools:showIn="@layout/activity_payment_ticket_event">
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="19dp"
+            android:text="$ 25 US "
+            android:textColor="@android:color/background_dark"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvPrice"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:hint="Card number">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tvCarteNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_html" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tvMonthDesig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textInputLayout4"
+            android:layout_alignStart="@+id/textInputLayout4"
+            android:layout_below="@+id/textInputLayout4"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tvMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_html"
+                android:hint="Month" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvMonthDesig"
+            android:layout_alignStart="@+id/tvMonthDesig"
+            android:layout_below="@+id/tvMonthDesig"
+            android:layout_marginTop="24dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tvYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_html"
+                android:hint="Year" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textInputLayout6"
+            android:layout_alignStart="@+id/textInputLayout6"
+            android:layout_below="@+id/textInputLayout6"
+            android:layout_marginTop="18dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tvCvc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_html"
+                android:hint="CVC" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tvPrice"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/tvPrice"
+            android:background="@color/colorPrimary"
+            android:text="pay"
+            android:textColor="@color/colorBlanc" />
+
+        <Button
+            android:id="@+id/btnpayment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textInputLayout7"
+            android:layout_marginTop="18dp"
+            android:background="@android:color/darker_gray"
+            android:text="Cancel"
+            android:textColor="@color/colorBlanc" />
+    </RelativeLayout>
+</ScrollView>
+

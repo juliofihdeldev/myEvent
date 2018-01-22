@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgComments"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/recyclerView"
+            android:layout_alignStart="@+id/recyclerView"
+            android:layout_alignTop="@+id/userName"
+            android:contentDescription="@string/todo"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            app:srcCompat="@drawable/amonik"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="53dp" />
+
+
+        <ImageView
+            android:id="@+id/imgSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_action_bookmark"
+            tools:layout_editor_absoluteX="325dp"
+            tools:layout_editor_absoluteY="427dp" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView9"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textView9"
+            android:layout_marginTop="54dp"
+            android:paddingEnd="4dp"
+            android:text="JulioFils"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName"
+            android:layout_toEndOf="@+id/imgComments"
+            android:layout_toRightOf="@+id/imgComments"
+            android:paddingLeft="4dp"
+            android:text="Message"
+            android:textSize="13sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            app:srcCompat="@drawable/amonik" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imgComments"
+            android:layout_marginTop="11dp"
+            android:id="@+id/recyclerView" />
+
+        <EditText
+            android:id="@+id/edtComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView7"
+            android:layout_toEndOf="@+id/imgComments"
+            android:layout_toLeftOf="@+id/imgSend"
+            android:layout_toRightOf="@+id/imgComments"
+            android:layout_toStartOf="@+id/imgSend"
+            android:ems="10"
+            android:hint="Be nice"
+            android:inputType="textMultiLine" />
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

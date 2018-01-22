@@ -4,64 +4,173 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.musickart.fihdel.musikart.activity.ProfilUsers">
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.musickart.fihdel.event.activity.ProfilUsers">
 
-    <RelativeLayout
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp">
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-
-        <ImageView
-            android:id="@+id/backGr"
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="?attr/actionBarSize"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/amonik" />
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="35dp"
-            app:srcCompat="@drawable/phoo" />
+            android:layout_marginTop="55dp"
+            android:background="@color/colorBlanc"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_above="@+id/textView6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="17dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:src="@drawable/logoevent"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView12"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:text="Julio "
+                android:textColor="@color/dark_blue" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="65dp"
+                android:text="julio.fils1@gmail.com"
+                android:textColor="@color/dark_blue"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textView7"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/ic_action_favoris" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView12"
+                android:layout_alignRight="@+id/imageView12"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="51dp"
+                android:text="Valide"
+                android:textColor="@color/colorBlanc"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="317dp"
+                tools:layout_editor_absoluteY="368dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView9"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="18dp"
-            android:text="Name"
-            android:textColor="@color/colorBlanc" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginTop="20dp"
+            android:padding="8dp">
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView6"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="17dp"
-            android:text="120 Gdes"
-            android:textColor="@color/colorBlanc"
-            android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/amonik"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="342dp" />
 
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/textView7"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
-            app:srcCompat="@drawable/ic_action_edit" />
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView12"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:text="Valide"
+                android:textColor="@color/colorBlanc"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="317dp"
+                tools:layout_editor_absoluteY="291dp" />
 
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView12"
+                android:layout_toEndOf="@+id/imageView9"
+                android:layout_toRightOf="@+id/imageView9"
+                android:paddingLeft="8dp"
+                android:text="ME_0012"
+                android:textColor="@color/colorBlanc"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="83dp"
+                tools:layout_editor_absoluteY="349dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_alignTop="@+id/imageView9"
+                android:layout_toEndOf="@+id/imageView9"
+                android:layout_toRightOf="@+id/imageView9"
+                android:paddingLeft="8dp"
+                android:text="Jeu 12 2018"
+                android:textColor="@color/colorBlanc"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="83dp"
+                tools:layout_editor_absoluteY="369dp" />
+        </RelativeLayout>
     </RelativeLayout>
-
 </android.support.constraint.ConstraintLayout>

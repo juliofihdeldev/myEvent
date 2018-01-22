@@ -4,50 +4,42 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_action_dash"
-            android:title="Tableau de bord" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_action_genre"
-            android:title="Explorer" />
-        <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/compte"
             android:icon="@drawable/ic_action_artiste"
-            android:title="Artiste/groupe" />
+            android:title="Profil" />
         <item
             android:id="@+id/newAlbum"
-            android:icon="@drawable/ic_action_album"
-            android:title="Nouveaux albums" />
+            android:icon="@drawable/ic_action_ticket"
+            android:title="Mes Tickets" />
+
         <item
-            android:id="@+id/albumMoreListen"
-            android:icon="@drawable/ic_action_listen"
-            android:title="Albums les + écoutés" />
+            android:id="@+id/favoris"
+            android:icon="@drawable/ic_action_favoris"
+            android:title="Favoris" />
+
     </group>
 
-
+    <!--
     <item android:title="">
 
         <menu>
             <item
-                android:id="@+id/compte"
-                android:icon="@drawable/ic_action_artiste"
-                android:title="Mon compte" />
-            <item
                 android:id="@+id/six"
                 android:icon="@drawable/ic_action_mymusic"
-                android:title="Mes musiques" />
+                android:title="Mes events" />
             <item
                 android:id="@+id/seven"
                 android:icon="@drawable/ic_action_playlist"
-                android:title="Mes playlists" />
+                android:title="Mes Participants" />
             <item
                 android:id="@+id/eight"
                 android:icon="@drawable/ic_action_bag"
-                android:title="Mon panier" />
+                android:title="Account" />
         </menu>
     </item>
+    -->
 
     <item android:title="">
         <menu>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Musikart</string>
+    <string name="app_name">myEvent</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -8,4 +8,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="groupe">Harmonik</string>
+    <string name="placeholer_club">Amour</string>
+    <string name="title_activity_details_activity">Details_activity</string>
+    <string name="title_activity_details">Details</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_payment_ticket_event">PaymentTicketEvent</string>
 </resources>

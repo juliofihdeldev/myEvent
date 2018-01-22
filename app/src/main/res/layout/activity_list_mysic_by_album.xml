@@ -10,7 +10,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.musickart.fihdel.musikart.fragment.ListMysicByAlbum"
+        tools:context="com.musickart.fihdel.event.fragment.ListMysicByAlbum"
         android:orientation="vertical">
 
         <android.support.design.widget.AppBarLayout
