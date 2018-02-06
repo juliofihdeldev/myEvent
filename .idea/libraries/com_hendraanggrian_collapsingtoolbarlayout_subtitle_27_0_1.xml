@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="com.hendraanggrian:collapsingtoolbarlayout-subtitle-27.0.1">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/collapsingtoolbarlayout-subtitle-27.0.1.aar/fc73562a2605a4195ec60b5fc96e0620/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/collapsingtoolbarlayout-subtitle-27.0.1.aar/fc73562a2605a4195ec60b5fc96e0620/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/gradle/gradle-3.3/caches/transforms-1/files-1.1/collapsingtoolbarlayout-subtitle-27.0.1.aar/a22be70a196c13d4b4e95d44ea2a809a/res" />
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-3.3/caches/transforms-1/files-1.1/collapsingtoolbarlayout-subtitle-27.0.1.aar/a22be70a196c13d4b4e95d44ea2a809a/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hendraanggrian/collapsingtoolbarlayout-subtitle/27.0.1/16ec8907b87f60681ce3e77c3b80b6d5c21e1bee/collapsingtoolbarlayout-subtitle-27.0.1-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-3.3/caches/modules-2/files-2.1/com.hendraanggrian/collapsingtoolbarlayout-subtitle/27.0.1/16ec8907b87f60681ce3e77c3b80b6d5c21e1bee/collapsingtoolbarlayout-subtitle-27.0.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

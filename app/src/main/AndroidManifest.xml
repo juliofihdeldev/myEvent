@@ -44,7 +44,8 @@
             android:label="@string/title_activity_payment_ticket_event"
             android:theme="@style/AppTheme" />
         <activity android:name=".activity.MyTicket" />
-        <activity android:name=".activity.UserValideTicket"></activity>
+        <activity android:name=".activity.UserValideTicket" />
+        <activity android:name=".activity.LoginActivity"></activity>
     </application>
 
 </manifest>
