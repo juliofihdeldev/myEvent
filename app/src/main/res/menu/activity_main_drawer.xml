@@ -4,21 +4,37 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-
         <item
             android:id="@+id/compte"
             android:icon="@drawable/ic_action_artiste"
             android:title="Profil" />
         <item
-            android:id="@+id/newAlbum"
+            android:id="@+id/compose"
+            android:icon="@drawable/ic_action_compose_plat"
+            android:title="Composer un menu" />
+        <item
+            android:id="@+id/categorie"
+            android:icon="@drawable/ic_action_list"
+            android:title="Categories" />
+
+        <item
+            android:id="@+id/commandes"
             android:icon="@drawable/ic_action_ticket"
-            android:title="Mes Tickets" />
+            android:title="Mes commandes" />
 
         <item
             android:id="@+id/favoris"
             android:icon="@drawable/ic_action_favoris"
             android:title="Favoris" />
 
+        <item
+            android:id="@+id/sugestions"
+            android:icon="@drawable/ic_action_favoris"
+            android:title="Suggestions" />
+        <item
+            android:id="@+id/history"
+            android:icon="@drawable/ic_action_history"
+            android:title="Historiques" />
     </group>
 
     <!--
@@ -28,7 +44,7 @@
             <item
                 android:id="@+id/six"
                 android:icon="@drawable/ic_action_mymusic"
-                android:title="Mes events" />
+                android:title="platsents" />
             <item
                 android:id="@+id/seven"
                 android:icon="@drawable/ic_action_playlist"
@@ -43,6 +59,10 @@
 
     <item android:title="...">
         <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Partager" />
             <item
                 android:id="@+id/one"
                 android:icon="@drawable/ic_action_bag"

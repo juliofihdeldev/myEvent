@@ -24,7 +24,7 @@
 
     <!-- In res/values/colors.xml -->
     <color name="dark_blue">#180065</color>
-    <color name="light_blue">#334ee9ff</color>
+    <color name="light_blue">#4dff4e5d</color>
     <color name="medium_green">#3d853e</color>
     <color name="light_green">#3c2ae668</color>
 
@@ -51,5 +51,10 @@
         <item name="colorPrimaryDark">#000</item>
         <item name="colorControlNormal">@color/dark_blue</item>
         <item name="android:textColorHighlight">@color/light_blue</item>
+    </style>
+
+    <style name="spinner_dropdown_style_theme1" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">#507B91</item>
     </style>
 </resources>

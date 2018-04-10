@@ -36,7 +36,7 @@
             android:layout_height="50dp"
             android:layout_alignLeft="@+id/recyclerView"
             android:layout_alignStart="@+id/recyclerView"
-            android:layout_alignTop="@+id/userName"
+            android:layout_alignTop="@+id/namePlat"
             android:contentDescription="@string/todo"
             android:padding="2dp"
             android:scaleType="centerCrop"
@@ -59,7 +59,7 @@
             tools:layout_editor_absoluteY="427dp" />
 
         <TextView
-            android:id="@+id/userName"
+            android:id="@+id/namePlat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/textView9"
@@ -74,7 +74,7 @@
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/userName"
+            android:layout_below="@+id/namePlat"
             android:layout_toEndOf="@+id/imgComments"
             android:layout_toRightOf="@+id/imgComments"
             android:paddingLeft="4dp"

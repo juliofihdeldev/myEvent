@@ -10,7 +10,7 @@
     android:layout_alignParentTop="true"
     android:background="@color/colorPrimary"
     android:paddingTop="60dp"
-    tools:context="com.musickart.fihdel.event.activity.UserValideTicket">
+    tools:context="com.td.fintech.plat.activity.UserValideTicket">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
         android:background="@drawable/relative_layout_background"
         android:padding="8dp"
         stripe:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="com.musickart.fihdel.event.activity.PaymentTicketEvent"
+        tools:context="com.td.fintech.plat.activity.PaymentTicketEvent"
         tools:showIn="@layout/activity_payment_ticket_event">
 
         <ImageView

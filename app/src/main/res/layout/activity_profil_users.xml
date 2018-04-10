@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context="com.musickart.fihdel.event.activity.ProfilUsers">
+    tools:context="com.td.fintech.plat.activity.ProfilUsers">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorBlanc"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="0dp">
@@ -40,7 +40,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="55dp"
-            android:background="@color/colorBlanc"
+            android:background="@color/colorPrimaryDark"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="0dp">
@@ -54,7 +54,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="17dp"
                 android:paddingTop="@dimen/nav_header_vertical_spacing"
-                android:src="@drawable/logoevent"
+                android:src="@drawable/julio"
                 app:civ_border_color="@color/colorPrimary"
                 app:civ_border_width="2dp" />
 
@@ -66,7 +66,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="16dp"
                 android:text="Julio "
-                android:textColor="@color/dark_blue" />
+                android:textColor="@color/colorBlanc" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -76,7 +76,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="65dp"
                 android:text="julio.fils1@gmail.com"
-                android:textColor="@color/dark_blue"
+                android:textColor="@color/colorBlanc"
                 android:textSize="14sp" />
 
             <ImageView
@@ -105,72 +105,39 @@
                 tools:layout_editor_absoluteX="317dp"
                 tools:layout_editor_absoluteY="368dp" />
 
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tvMontant"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_below="@+id/relativeLayout2"
-            android:layout_marginTop="20dp"
-            android:padding="8dp">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:text="500 HTG"
+            android:textColor="@color/medium_green"
+            android:textSize="32sp" />
 
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                app:srcCompat="@drawable/amonik"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="342dp" />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="26dp"
+            android:background="@color/colorAccent"
+            android:text="Renflouer votre compte"
+            android:textColor="#fff" />
 
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_below="@+id/textView12"
-                android:layout_marginEnd="13dp"
-                android:layout_marginRight="13dp"
-                android:text="Valide"
-                android:textColor="@color/colorBlanc"
-                android:textStyle="bold"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="317dp"
-                tools:layout_editor_absoluteY="291dp" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textView12"
-                android:layout_toEndOf="@+id/imageView9"
-                android:layout_toRightOf="@+id/imageView9"
-                android:paddingLeft="8dp"
-                android:text="ME_0012"
-                android:textColor="@color/colorBlanc"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="83dp"
-                tools:layout_editor_absoluteY="349dp" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="16dp"
-                android:layout_alignTop="@+id/imageView9"
-                android:layout_toEndOf="@+id/imageView9"
-                android:layout_toRightOf="@+id/imageView9"
-                android:paddingLeft="8dp"
-                android:text="Jeu 12 2018"
-                android:textColor="@color/colorBlanc"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="83dp"
-                tools:layout_editor_absoluteY="369dp" />
-        </RelativeLayout>
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

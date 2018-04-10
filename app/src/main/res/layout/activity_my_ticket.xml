@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.musickart.fihdel.event.activity.MyTicket">
+    android:background="?attr/colorButtonNormal"
+    tools:context="com.td.fintech.plat.activity.MyTicket">
 
     <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay"
-        android:id="@+id/appBarLayout">
+        android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -30,67 +31,81 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/appBarLayout"
+        android:alpha="8"
+        android:background="#fff"
         android:padding="8dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="140dp">
 
         <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:id="@+id/imagesPanier"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            app:srcCompat="@drawable/amonik"
+            app:srcCompat="@drawable/lo"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="342dp" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/tvPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvDescription"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/textView12"
-            android:layout_marginEnd="13dp"
-            android:layout_marginRight="13dp"
-            android:text="Valide"
-            android:textColor="@android:color/black"
+            android:text="420 HTG"
+            android:textColor="@color/medium_green"
+            android:textSize="25sp"
             android:textStyle="bold"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="317dp"
             tools:layout_editor_absoluteY="291dp" />
 
         <TextView
-            android:layout_marginTop="5dp"
-            android:id="@+id/textView8"
+            android:id="@+id/tvDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView12"
-            android:layout_toEndOf="@+id/imageView9"
-            android:layout_toRightOf="@+id/imageView9"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imagesPanier"
+            android:layout_toRightOf="@+id/imagesPanier"
             android:paddingLeft="8dp"
-            android:text="ME_0012"
+            android:text="Description du produit"
             android:textColor="@android:color/black"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="83dp"
             tools:layout_editor_absoluteY="349dp" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="16dp"
-            android:layout_alignTop="@+id/imageView9"
-            android:layout_toEndOf="@+id/imageView9"
-            android:layout_toRightOf="@+id/imageView9"
+            android:layout_alignTop="@+id/imagesPanier"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/imagesPanier"
+            android:layout_toRightOf="@+id/imagesPanier"
             android:paddingLeft="8dp"
-            android:text="Jeu 12 2018"
+            android:text="Harry's combo"
             android:textColor="@android:color/black"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="83dp"
             tools:layout_editor_absoluteY="369dp" />
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSendToCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:background="#fff"
+        android:text="Payer"
+        android:textColor="@color/medium_green" />
 
 </RelativeLayout>

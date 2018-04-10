@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.musickart.fihdel.event.myevent.td"
+        applicationId "com.rebo.fintech"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
@@ -33,6 +33,7 @@ allprojects {
     }
 }
 
+
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
@@ -54,15 +55,4 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'com.hendraanggrian:collapsingtoolbarlayout-subtitle:27.0.1'
     compile 'com.sdsmdg.harjot:rotatingtext:1.0.2'
-
 }
-
-
-
-
-
-
-
-
-
-

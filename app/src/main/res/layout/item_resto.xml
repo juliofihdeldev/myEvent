@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@color/colorBlanc"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagePlat"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            app:srcCompat="@drawable/logoevent" />
+
+        <TextView
+            android:id="@+id/namePlat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/imagePlat"
+            android:layout_toRightOf="@+id/imagePlat"
+            android:text="Retro nightclub"
+            android:textSize="22sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar3"
+            style="@android:style/Widget.DeviceDefault.Light.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imagePlat"
+            android:layout_toEndOf="@+id/imagePlat"
+            android:layout_toRightOf="@+id/imagePlat"
+            android:rating="4.5" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="com.android.support:design-27.0.1">
     <CLASSES>
-      <root url="file://$APPLICATION_HOME_DIR$/gradle/gradle-3.3/caches/transforms-1/files-1.1/design-27.0.1.aar/cdde6fc428d4143eb5913c5828f8f218/res" />
-      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-3.3/caches/transforms-1/files-1.1/design-27.0.1.aar/cdde6fc428d4143eb5913c5828f8f218/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-27.0.1.aar/846becd9bee9e8a9c3b58409cd970d2d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-27.0.1.aar/846becd9bee9e8a9c3b58409cd970d2d/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-3.3/caches/modules-2/files-2.1/com.android.support/design/27.0.1/db63b93b8ab8e5022d71e8085c8b6d4e6dd3084b/design-27.0.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/design/27.0.1/db63b93b8ab8e5022d71e8085c8b6d4e6dd3084b/design-27.0.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

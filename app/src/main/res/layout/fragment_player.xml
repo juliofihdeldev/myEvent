@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBlanc"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.musickart.fihdel.event.fragment.PlayerFragment">
+    tools:context="com.td.fintech.plat.fragment.PlayerFragment">
 
     <RelativeLayout
         android:id="@+id/one"
